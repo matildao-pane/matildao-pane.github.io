@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matilde Mazzini - AI Engineer & XR Enthusiast</title>
+    <style>
+        :root {
+            --primary-color: #2d3436;
+            --secondary-color: #636e72;
+            --background-color: #ffffff;
+            --accent-color: #00b894;
+            --spacing-unit: clamp(1rem, 2vw, 2rem);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        body {
+            background-color: var(--background-color);
+            line-height: 1.7;
+            color: var(--primary-color);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .navbar {
+            padding: var(--spacing-unit) 5vw;
+            background-color: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            text-decoration: none;
+            letter-spacing: -0.5px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: calc(var(--spacing-unit) * 2);
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--secondary-color);
+            font-weight: 500;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-color);
+        }
+
+        .main-content {
+            max-width: 1400px;
+            margin: calc(var(--spacing-unit) * 4) auto;
+            padding: 0 5vw;
+            flex: 1;
+        }
+
+        .hero {
+            padding: calc(var(--spacing-unit) * 6) 0;
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            font-weight: 700;
+            letter-spacing: -1px;
+            line-height: 1.1;
+            margin-bottom: calc(var(--spacing-unit) * 1.5);
+        }
+
+        .hero p {
+            color: var(--secondary-color);
+            font-size: clamp(1.1rem, 2vw, 1.25rem);
+            max-width: 600px;
+        }
+
+        section {
+            margin: calc(var(--spacing-unit) * 4) 0;
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            margin-bottom: calc(var(--spacing-unit) * 1.5);
+            letter-spacing: -0.5px;
+        }
+
+        .bio p {
+            color: var(--secondary-color);
+            max-width: 700px;
+        }
+
+        .skills ul {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: calc(var(--spacing-unit) * 1.5);
+        }
+
+        .skills li {
+            background: #f8f9fa;
+            padding: calc(var(--spacing-unit) * 1.5);
+            border-radius: 12px;
+            transition: transform 0.3s ease;
+        }
+
+        .skills li:hover {
+            transform: translateY(-2px);
+        }
+
+        .skills strong {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+        }
+
+        .contact {
+            background: #f8f9fa;
+            padding: calc(var(--spacing-unit) * 3);
+            border-radius: 16px;
+        }
+
+        .contact a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .contact a:hover {
+            opacity: 0.8;
+        }
+
+        .footer {
+            text-align: center;
+            padding: calc(var(--spacing-unit) * 1.5);
+            color: var(--secondary-color);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                gap: var(--spacing-unit);
+            }
+
+            .skills ul {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="index.html" class="logo">MM</a>
+            <div class="nav-links">
+                <a href="./pages/curriculum.html">Curriculum</a>
+                <a href="./pages/posts.html">Posts</a>
+                <a href="./pages/links.html">Links</a>
+                <a href="./pages/projects.html">Projects</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section class="hero">
+            <h1>Hello, I'm Matilde Mazzini</h1>
+            <p>AI Engineer & XR Enthusiast with a passion for merging technology with creative media.</p>
+        </section>
+
+        <section class="bio">
+            <h2>About Me</h2>
+            <p>I'm an engineer with a creative edge, inspired to merge technical skills with the world of entertainment and 3D visuals. I began my journey in engineering driven by a fascination with the motion capture technologies used in films.</p>
+        </section>
+
+        <section class="skills">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li>
+                    <strong>Languages</strong>
+                    Python, C++, Java
+                </li>
+                <li>
+                    <strong>Machine Learning & Computer Vision</strong>
+                    Pytorch, Tensorflow, Keras
+                </li>
+                <li>
+                    <strong>Web Development</strong>
+                    Javascript, HTML5, CSS, Three.js, WebGL
+                </li>
+                <li>
+                    <strong>Cloud</strong>
+                    Hadoop, Spark, Docker
+                </li>
+                <li>
+                    <strong>Database Management</strong>
+                    MySQL, MongoDB, Neo4J
+                </li>
+            </ul>
+        </section>
+
+        <section class="contact">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:mazz.matilde@gmail.com">mazz.matilde@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/matilde-mazzini" target="_blank">linkedin.com/matilde-mazzini</a></p>
+            <p>GitHub: <a href="https://github.com/matildao-pane" target="_blank">github.com/matildao-pane</a></p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Matilde Mazzini. All rights reserved.</p>
+    </footer>
+</body>
+</html>
