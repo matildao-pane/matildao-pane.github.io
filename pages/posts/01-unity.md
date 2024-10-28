@@ -1,5 +1,4 @@
-# Unity_OpenAI Integration for VR Applications - Learning Path
-
+ 
 ## Introduction
 In recent years, VR development has been revolutionized by the integration of artificial intelligence. Combining Unity with OpenAI’s tools opens new possibilities for creating intelligent, interactive virtual environments.
 
