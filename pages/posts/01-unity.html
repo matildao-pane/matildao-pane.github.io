@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Professional Portfolio</title>
     <link rel="stylesheet" type="text/css" href="../.././style/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
     <nav class="navbar">
@@ -22,7 +23,7 @@
     
         <article class="posts-section">
             <h1>Unity_OpenAI Integration for VR Applications - Learning Path</h1>
-            <p class="post-date"> - </p>
+            <p id="post-date"> - </p>
             <section class="post-content" id="post-content">
                 <!-- Markdown content  -->
             </section>
@@ -34,28 +35,39 @@
         <p>&copy; 2024 Matilde Mazzini. All rights reserved.</p>
     </footer>
 </body>
-
-
-<!-- Markdown parser -->
-<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <!-- Include a Markdown parser -->
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script>
+        
+        // Load and parse Markdown content
+        async function loadMarkdown() {
+            try {
+                // Updated path to load from the same directory
+                const response = await fetch('./01-unity.md');
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const markdown = await response.text();
+                // Configure marked options if needed
+                marked.setOptions({
+                    breaks: true, // Enable line breaks
+                    gfm: true    // Enable GitHub Flavored Markdown
+                });
+                // Parse and insert the Markdown content
+                document.getElementById('post-content').innerHTML = marked.parse(markdown);
+            } catch (error) {
+                console.error('Error loading Markdown:', error);
+                document.getElementById('post-content').innerHTML = '<p>Error loading content. Please try again later.</p>';
+            }
+        }
 
+        // Call the function when the page loads
+        document.addEventListener('DOMContentLoaded', loadMarkdown);
 
-        // Optional: Set the date dynamically if desired
+        // Set the date dynamically
         document.getElementById('post-date').innerText = `Published on: ${new Date().toLocaleDateString("en-US", {
-            year: "numeric",
-            month: "long",
-            day: "numeric"
+        year: "numeric",
+        month: "long",
+        day: "numeric"
         })}`;
 
-            // Load and parse Markdown content
-        async function loadMarkdown() {
-        const response = await fetch('../content/unity_openai_integration.md');
-        const markdown = await response.text();
-        document.getElementById('post-content').innerHTML = marked.parse(markdown);
-    }
-    loadMarkdown();
     </script>
 </html>
