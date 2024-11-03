@@ -347,4 +347,33 @@ h1 {
 .tech-stack strong {
     color: var(--primary-color);
 }
+  
+.links-list {
+    list-style: none;
+    background-color: #f8f9fa; /* Gray background for the entire container */
+    padding: calc(var(--spacing-unit) * 1.2);
+    border-radius: 12px;
+    margin-bottom: var(--spacing-unit);
+}
 
+.links-list li {
+    margin-bottom: calc(var(--spacing-unit) * 0.5); /* Adjust space between items */
+}
+
+.links-list li:last-child {
+    margin-bottom: 0; /* Remove margin on the last item */
+}
+
+.links-list a {
+    display: block;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    padding: calc(var(--spacing-unit) * 0.75);
+    border-radius: 8px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.links-list a:hover {
+    color: var(--accent-color); /* Green on hover */
+}
