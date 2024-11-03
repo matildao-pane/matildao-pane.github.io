@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Portfolio</title>
+    <title>Projects</title>
     <link rel="stylesheet" type="text/css" href=".././style/style.css">
+    
 </head>
 <body>
     <nav class="navbar">
@@ -19,9 +19,216 @@
             </div>
         </div>
     </nav>
+
     <main class="main-content">
-  
+        <section class="project-section">
+            <h2>AI Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Motion Capture Data Cleanup</h3>
+                    <p>An AI-powered system for automated cleanup of motion capture data using deep learning techniques. Researched papers and implemented LSTM based solutions. Designed new .c3d data ingestion pipeline and retraining.</p>
+                    <div class="tech-stack">
+                        <strong>Tech Stack:</strong> Python, PyTorch, PyTorch Lightning, Vicon Shogun API
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>3D Pose Detection and Object Tracking System from Monocular RGB</h3>
+                    <p>Master's thesis project: A real-time 3D object detection and tracking system for WebAR applications, featuring real-time rendering of 3D mesh on top of tracked objects using monocular RGB input.</p>
+                    <div class="tech-stack">
+                        <strong>Tech Stack:</strong> Google Mediapipe, WebGL, Three.js
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Hawkeye: Neural Image Search Engine</h3>
+                    <p>A content-based image search engine developed for the Multimedia Information Retrieval and Computer Vision course. Uses query-by-example paradigm with advanced neural feature extraction and efficient spatial indexing.</p>
+                    <div class="tech-stack">
+                        <strong>Tech Stack:</strong> Python, TensorFlow, MobileNetV2, Flask
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/username/hawkeye">GitHub</a>
+                    </div>
+                    <div style="margin-top: 0.75rem; font-size: 0.85rem; color: var(--secondary-color);">
+                        <strong style="color: var(--primary-color);">Key Features:</strong>
+                        <ul style="list-style: none; padding-left: 0;">
+                            <li>• Vantage Point Tree for efficient similarity search</li>
+                            <li>• Dual feature extraction using base and fine-tuned MobileNetV2</li>
+                            <li>• Interactive web interface for image queries</li>
+                            <li>• Comprehensive performance evaluation system</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Medical Image Analysis CNN</h3>
+                    <p>Developed a Convolutional Neural Network for detecting and classifying abnormalities in mammography images. Part of the Computational Intelligence and Deep Learning course at University of Pisa.</p>
+                    <p style="font-size: 0.9rem; margin-top: 0.5rem;">Used the Modified CBIS DDSM (Curated Breast Imaging Subset of Digital Database for Screening Mammography) dataset for training and validation.</p>
+                    <div class="tech-stack">
+                        <strong>Tech Stack:</strong> Python, PyTorch, OpenCV, scikit-learn
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/matildao-pane/Convolutional-Neural-Network-for-Medical-Imaging-Analysis">GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>GIAR: Automatic Game Genre Prediction</h3>
+                    <p>An advanced feature for the GIAR platform that uses machine learning to automate the tagging of game genres based on game descriptions. Developed for the Advanced Data Mining and Machine Learning course, this extension speeds up the game data entry process, offering genre predictions that admins can review and adjust.</p>
+                    <div class="tech-stack">
+                        <strong>Tech Stack:</strong> Python, Scikit-Learn, FastAPI, Rawg API
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/matildao-pane/GIAR-3">GitHub</a>
+                    </div>
+                    <div style="margin-top: 0.75rem; font-size: 0.85rem; color: var(--secondary-color);">
+                        <strong style="color: var(--primary-color);">Features:</strong>
+                        <ul style="list-style: none; padding-left: 0;">
+                            <li>• Automated genre prediction for new game entries</li>
+                            <li>• Multilabel classification based on game descriptions</li>
+                            <li>• Integration with Rawg API for comprehensive data</li>
+                            <li>• Customizable genre suggestions for admins</li>
+                            <li>• Simplifies and accelerates game data management</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="project-section">
+        <h2>DBMS Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>GIAR: Multi-Database Gaming Platform</h3>
+                <p>A comprehensive gaming platform developed for the Large-Scale and Multi-Structured Databases course, featuring both document-based and graph-based data storage solutions. Later extended with machine learning capabilities for the Advanced Data Mining course.</p>
+                <div class="tech-stack">
+                    <strong>Tech Stack:</strong> MongoDB, Neo4j, Python, FastAPI
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/matildao-pane/GIAR">GitHub</a>
+                </div>
+                <div style="margin-top: 0.75rem; font-size: 0.85rem; color: var(--secondary-color);">
+                    <strong style="color: var(--primary-color);">Features:</strong>
+                    <ul style="list-style: none; padding-left: 0;">
+                        <li>• Hybrid database architecture (MongoDB + Neo4j)</li>
+                        <li>• Document-based game data storage</li>
+                        <li>• Graph-based user relationships and recommendations</li>
+                        <li>• Comprehensive index performance analysis</li>
+                        <li>• RESTful API service integration</li>
+                    </ul>
+                </div>
+            </div>
+
+
+        <section class="project-section">
+            <h2>Cloud Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Distributed K-Means Clustering</h3>
+                    <p>Implemented the K-Means clustering algorithm using both Hadoop MapReduce and Apache Spark frameworks as part of the Cloud Computing course at University of Pisa. The system efficiently processes large datasets by parallelizing the clustering computations.</p>
+                    <div class="tech-stack">
+                        <strong>Tech Stack:</strong> Hadoop, Apache Spark, Java, Python (validation)
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/matildao-pane/k-means-mapreduce">GitHub</a>
+   
+                    </div>
+                    <div style="margin-top: 0.75rem; font-size: 0.85rem; color: var(--secondary-color);">
+                        <strong style="color: var(--primary-color);">Features:</strong>
+                        <ul style="list-style: none; padding-left: 0;">
+                            <li>• MapReduce workflow implementation</li>
+                            <li>• Custom combiner for optimization</li>
+                            <li>• Parallel processing of clustering iterations</li>
+                            <li>• Validation using scikit-learn generated datasets</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Distributed Memory Monitoring System</h3>
+                    <p>A cloud-based monitoring system developed for the Cloud Computing course that tracks memory usage across remote machines. The system implements a producer-consumer architecture to collect, store, and visualize memory metrics using Gnocchi time-series database.</p>
+                    <div class="tech-stack">
+                        <strong>Tech Stack:</strong> Python, Gnocchi, SSH, OpenStack
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/matildao-pane/memory-monitoring">GitHub</a>
+                    </div>                    
+                    <div style="margin-top: 0.75rem; font-size: 0.85rem; color: var(--secondary-color);">
+                        <strong style="color: var(--primary-color);">Features:</strong>
+                        <ul style="list-style: none; padding-left: 0;">
+                            <li>• Producer component for remote data collection via SSH</li>
+                            <li>• Consumer component for data visualization</li>
+                            <li>• Time-series data storage using Gnocchi</li>
+                            <li>• Periodic memory usage monitoring</li>
+                            <li>• Distributed system architecture</li>
+                        </ul>
+                    </div>
+       
+
+                </div>
+ 
+            </div>
+        </section>
+
+        <section class="project-section">
+            <h2>VR Projects WIP</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>VR Museum - OpenAI NPC - Unity-OpenAI comunication - Server</h3>
+                    <p>Worked in the OpenAI integration in Unity for a realtime NPC-user comunication in Unity.</p>
+                    <div class="tech-stack">
+                        <strong>Tech Stack:</strong> Unity, C#, OpenAI API, FastAPI, Docker, OpenStack, Python, WebSocket
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-section">
+            <h2>Cybersecurity Projects</h2>
+            <div class="project-card">
+                <h3>Secure Multi-Client Messaging System</h3>
+                <p>A secure client-server application developed for the Foundations of Cybersecurity course. Features encrypted communication channels, digital signatures, and multi-threaded architecture for handling concurrent client connections.</p>
+                <div class="tech-stack">
+                    <strong>Tech Stack:</strong> C++, OpenSSL, POSIX Threads
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/matildao-pane/Secure-online-messaging-service">GitHub</a> 
+                </div>
+                <div style="margin-top: 0.75rem; font-size: 0.85rem; color: var(--secondary-color);">
+                    <strong style="color: var(--primary-color);">Key Features:</strong>
+                    <ul style="list-style: none; padding-left: 0;">
+                        <li>• Message encryption and digital signatures using OpenSSL</li>
+                        <li>• Multi-threaded server for concurrent client handling</li>
+                        <li>• Secure authentication protocol</li>
+                        <li>• Real-time message forwarding between clients</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-section">
+            <h2>Extra Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Cosmic Particle Detector</h3>
+                    <p>Educational tool built during University of Hawaii internship for detecting cosmic particles using Raspberry Pi. Integrated sensors and components: Hacked webcam, GPS sensor, LEDs, image analysis algorithms</p>
+                    <div class="tech-stack">
+                        <strong>Tech Stack:</strong> Python, Raspberry Pi, OpenCV
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Home Assistant Integration</h3>
+                    <p>Bachelor's thesis project: Implementation of the LWM2M standard in the Home Assistant Hub for IoT device management.</p>
+                    <div class="tech-stack">
+                        <strong>Tech Stack:</strong> Python, Home Assistant API
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
     <footer class="footer">
         <p>&copy; 2024 Matilde Mazzini. All rights reserved.</p>
     </footer>

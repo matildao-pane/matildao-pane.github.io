@@ -286,3 +286,65 @@ h1 {
 .contact a:hover {
     opacity: 0.8;
 }
+
+.project-section {
+    margin: calc(var(--spacing-unit) * 3) 0;
+}
+
+.project-section h2 {
+    font-size: 1.75rem;
+    margin-bottom: calc(var(--spacing-unit) * 1.2);
+    letter-spacing: -0.5px;
+    color: var(--primary-color);
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: calc(var(--spacing-unit) * 1.5);
+}
+
+.project-card {
+    background: #f8f9fa;
+    padding: calc(var(--spacing-unit) * 1.2);
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-2px);
+}
+
+.project-card h3 {
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    margin-bottom: calc(var(--spacing-unit) * 0.5);
+}
+
+.project-links {
+    display: flex;
+    gap: var(--spacing-unit);
+    margin-top: var(--spacing-unit);
+}
+
+.project-links a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: opacity 0.3s ease;
+}
+
+.project-links a:hover {
+    opacity: 0.8;
+}
+
+.tech-stack {
+    margin-top: calc(var(--spacing-unit) * 0.5);
+    font-size: 0.9rem;
+    color: var(--secondary-color);
+}
+
+.tech-stack strong {
+    color: var(--primary-color);
+}
+
